@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl" data-theme="emerald">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>الموقع الشامل للأذكار والأدعية والخدمات الرقمية</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="main-header">
+        <div class="top-bar">
+            <div class="controls">
+                <select id="langSwitch" onchange="changeLanguage(this.value)">
+                    <option value="ar">العربية 🇸🇦</option>
+                    <option value="en">English 🇬🇧</option>
+                </select>
+                <select id="themeSwitch" onchange="changeTheme(this.value)">
+                    <option value="emerald">أخضر زمردي فاخر</option>
+                    <option value="royal">أزرق ملكي عميق</option>
+                    <option value="gold">ذهبي ملكي أصيل</option>
+                </select>
+            </div>
+            <div class="auth-links">
+                <a href="pages/login.php" data-i18n="login">تسجيل الدخول</a>
+            </div>
+        </div>
+        <h1 data-i18n="site_title">🌿 واحة الأذكار والأدعية الرقمية 🌿</h1>
+        <p data-i18n="site_subtitle">قال تعالى: (ألا بذكر الله تطمئن القلوب)</p>
+    </header>
+
+    <nav class="main-nav">
+        <a href="index.html" class="active" data-i18n="nav_home">الرئيسية</a>
+        <a href="pages/morning.html" data-i18n="nav_morning">أذكار الصباح</a>
+        <a href="pages/evening.html" data-i18n="nav_evening">أذكار المساء</a>
+        <a href="pages/sleep.html" data-i18n="nav_sleep">أذكار النوم</a>
+        <a href="pages/prayer.html" data-i18n="nav_prayer">أذكار الصلاة</a>
+        <a href="pages/dua.html" data-i18n="nav_dua">أدعية متنوعة</a>
+        <a href="pages/order.html" data-i18n="nav_order">تنسيق وحجز الطلب</a>
+        <a href="pages/contact.php" data-i18n="nav_contact">تواصل معنا</a>
+    </nav>
+
+    <main class="container">
+        <section class="hero">
+            <h2 data-i18n="welcome_h2">مرحباً بكم في الصرح الرقمي المبارك</h2>
+            <p data-i18n="welcome_p">منصة متكاملة لتحصين النفس بالذكر الحكيم والأدعية النبوية الشريفة مع واجهات عصرية متطورة.</p>
+        </section>
+
+        <section class="cards">
+            <div class="card">
+                <div class="card-icon">🌞</div>
+                <h3 data-i18n="card_m_title">أذكار الصباح</h3>
+                <p data-i18n="card_m_desc">نور يومك بذكر الله وحصنه الحصين منذ الإشراقة.</p>
+                <a href="pages/morning.html" class="btn-card" data-i18n="enter">دخول القسم</a>
+            </div>
+            <div class="card">
+                <div class="card-icon">🌙</div>
+                <h3 data-i18n="card_e_title">أذكار المساء</h3>
+                <p data-i18n="card_e_desc">اختم يومك بالاستغفار والسكينة واطلب الحفظ الإلهي.</p>
+                <a href="pages/evening.html" class="btn-card" data-i18n="enter">دخول القسم</a>
+            </div>
+            <div class="card">
+                <div class="card-icon">😴</div>
+                <h3 data-i18n="card_s_title">أذكار النوم</h3>
+                <p data-i18n="card_s_desc">نم قرير العين تحت حماية آية الكرسي والمعوذات.</p>
+                <a href="pages/sleep.html" class="btn-card" data-i18n="enter">دخول القسم</a>
+            </div>
+            <div class="card">
+                <div class="card-icon">🕌</div>
+                <h3 data-i18n="card_p_title">أذكار الصلاة</h3>
+                <p data-i18n="card_p_desc">الصلوات والواردات النبوية الثابتة بعد التسليم.</p>
+                <a href="pages/prayer.html" class="btn-card" data-i18n="enter">دخول القسم</a>
+            </div>
+            <div class="card">
+                <div class="card-icon">🤲</div>
+                <h3 data-i18n="card_d_title">أدعية متنوعة</h3>
+                <p data-i18n="card_d_desc">باقة واسعة من أدعية الرزق، الشفاء، والتوفيق.</p>
+                <a href="pages/dua.html" class="btn-card" data-i18n="enter">دخول القسم</a>
+            </div>
+            <div class="card">
+                <div class="card-icon">📋</div>
+                <h3 data-i18n="card_o_title">نظام الطلبات المخصص</h3>
+                <p data-i18n="card_o_desc">أدخل تفاصيل خدمتك أو مشروعك الخاص بكل دقة.</p>
+                <a href="pages/order.html" class="btn-card" data-i18n="enter">دخول القسم</a>
+            </div>
+        </section>
+    </main>
+
+    <footer class="main-footer">
+        <p><span data-i18n="footer_rights">جميع الحقوق محفوظة للموقع الشامل ©</span> <span id="footer-year">2026</span></p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

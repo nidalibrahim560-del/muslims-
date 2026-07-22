@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl" data-theme="emerald">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>تنسيق وحجز الطلب والخدمات</title>
+    <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+    <header class="main-header">
+        <h1>📋 نموذج طلب الخدمات والتنسيق الرقمي</h1>
+        <p>املأ التفاصيل بدقة لخدمتك بأفضل معايير الجودة والأداء</p>
+    </header>
+    <nav class="main-nav">
+        <a href="../index.html">الرئيسية</a>
+        <a href="morning.html">أذكار الصباح</a>
+        <a href="evening.html">أذكار المساء</a>
+        <a href="sleep.html">أذكار النوم</a>
+        <a href="prayer.html">أذكار الصلاة</a>
+        <a href="dua.html">أدعية متنوعة</a>
+        <a href="order.html" class="active">تنسيق وحجز الطلب</a>
+        <a href="contact.php">تواصل معنا</a>
+    </nav>
+    <main class="container">
+        <div class="form-container">
+            <h2 style="margin-bottom: 20px; color: var(--accent-color); text-align: center;">تفاصيل الطلب والمحتوى</h2>
+            <form action="#" method="POST">
+                <div class="form-group">
+                    <label>الاسم الكامل:</label>
+                    <input type="text" name="client_name" required placeholder="أدخل اسمك الكريم">
+                </div>
+                <div class="form-group">
+                    <label>البريد الإلكتروني:</label>
+                    <input type="email" name="client_email" required placeholder="example@domain.com">
+                </div>
+                <div class="form-group">
+                    <label>نوع الخدمة أو المشروع المطلوب:</label>
+                    <select name="service_type">
+                        <option value="web">تطوير وتصميم موقع ويب متكامل</option>
+                        <option value="design">تصميم واجهات وتنسيق الوان عصري</option>
+                        <option value="content">إدخال محتوى وتنسيق أدعية وأذكار</option>
+                        <option value="other">استشارة برمجية أو تقنية أخرى</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label>مستوى الأولوية أو الاستعجال:</label>
+                    <select name="priority">
+                        <option value="normal">عادي (خلال أسبوع)</option>
+                        <option value="urgent">عاجل (خلال 48 ساعة)</option>
+                        <option value="vip">خاص VIP (فوري)</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label>تفاصيل دقيقة حول المحتوى والمطلوب داخل المشروع:</label>
+                    <textarea name="order_details" rows="6" required placeholder="اكتب كافة التفاصيل، الألوان المفضلة، والأقسام المطلوبة بدقة..."></textarea>
+                </div>
+                <button type="submit" class="btn-submit">إرسال الطلب الآن</button>
+            </form>
+        </div>
+    </main>
+    <footer class="main-footer">
+        <p>جميع الحقوق محفوظة للموقع الشامل © <span id="footer-year">2026</span></p>
+    </footer>
+    <script src="../script.js"></script>
+</body>
+</html>
